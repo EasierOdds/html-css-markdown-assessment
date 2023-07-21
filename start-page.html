@@ -8,6 +8,34 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
 
     <style type="text/css">
+
+      main {
+        display: flex;
+        justify-content; space-between;
+      }
+      
+      aside {
+        flex: 1;
+        margin-left: 20px
+      }
+
+      div {
+        padding-top: 50px; border: 3px solid cyan;
+      }
+
+      a:hover {
+        background-color: var(--c-orange)
+      }
+      
+      li {
+        list-style-type: none;
+      }
+      
+      body {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
       p {
         color: rgb(131,148,150)
       }
@@ -29,24 +57,24 @@
         --c-cyan: rgb(42,161,152);
         --c-green: rgb(133,153,0);
       }
+
     </style>
 
   </head>
 
   <body>
-   
     <!-- Here is our main header that is used across all the pages of our website -->
 
     <header>
-      <h1 style="color: var(--c-yellow); text-align: center; font-size: 350%; background-color: var(--c-background-highlights);">Header</h1>
+      <h1 style="color: var(--c-yellow); text-align: center; font-size: 250%; background-color: var(--c-background-highlights);">Header</h1>
     </header>
 
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our team</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul style="display: flex; justify-content: space-between;">
+        <li style="text-align: center;"><a href="#">Home</a></li>
+        <li style="text-align: center;"><a href="#">Our team</a></li>
+        <li style="text-align: center;"><a href="#">Projects</a></li>
+        <li style="text-align: center;"><a href="#">Contact</a></li>
       </ul>
 
        <!-- A Search form is another common non-linear way to navigate through a website. -->
@@ -62,33 +90,51 @@
 
       <!-- It contains an article -->
       <article>
+
         <h2 style="color: var(--base-font-color)">Article heading</h2>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
 
-        <h3 style="color: var(--base-font-color)">Subsection</h3>
-
+        <div>
+        <h3 style="color: var(--base-font-color)">Subsection</h3> 
+        
         <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
 
         <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+       </div>
 
+
+        <div>
         <h3 style="color: var(--base-font-color)">Another subsection</h3>
 
         <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
 
         <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
+       </div>
+
       </article>
 
       <!-- the aside content can also be nested within the main content -->
       <aside>
-        <h2 style="color:var(--c-green)">Related</h2>
+        <h2 style="color:var(--c-green);">Related</h2>
 
-        <ul>
-          <li style="color: var(--c-magenta)"><a href="#">Oh I do like to be beside the seaside</a></li>
-          <li style="color: var(--c-magenta)"><a href="#">Oh I do like to be beside the sea</a></li>
-          <li style="color: var(--c-magenta)"><a href="#">Although in the North of England</a></li>
-          <li style="color: var(--c-magenta)"><a href="#">It never stops raining</a></li>
-          <li style="color: var(--c-magenta)"><a href="#">Oh well...</a></li>
+        <ul> 
+          <li style="color: var(--c-red);">
+            <a href="#" style="color: red;" onmouseover="this.style.color='blue';" onmouseout="this.style.color='red';">Oh I do like to be beside the seaside</a>
+          </li>
+          <li style="color: var(--c-red);">
+            <a href="#" style="color: red;" onmouseover="this.style.color='blue';" onmouseout="this.style.color='red';">Oh I do like to be beside the sea</a>
+          </li>
+          <li style="color: var(--c-red);">
+            <a href="#" style="color: red;" onmouseover="this.style.color='blue';" onmouseout="this.style.color='red';">Although in the North of England</a>
+          </li>
+          <li style="color: var(--c-red);">
+            <a href="#" style="color: red;" onmouseover="this.style.color='blue';" onmouseout="this.style.color='red';">It never stops raining</a>
+          </li>
+          <li style="color: var(--c-red);">
+            <a href="#" style="color: red;" onmouseover="this.style.color='blue';" onmouseout="this.style.color='red';">Oh well...</a>
+          </li>
+          
         </ul>
       </aside>
 
